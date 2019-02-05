@@ -1,5 +1,5 @@
 {
-  "name": "lgapp",
+  "name": "login-app",
   "version": "1.0.0",
   "description": "login app for profile chechx",
   "main": "app.js",

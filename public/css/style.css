@@ -1,9 +1,10 @@
 /* Space out content a bit */
 body {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  
+background: url(image/login.jpg) no-repeat center center fixed;
+  background-size: cover;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
   /* Everything but the jumbotron gets side spacing for mobile first views */
   .header,
   .marketing,

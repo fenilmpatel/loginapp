@@ -14,43 +14,26 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
 
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/style.css" />
+    {{!-- <link rel="stylesheet" href="/css/style.css" /> --}}
 </head>
 
 <body>
-    <div class="container">
-        <div class="header clearfix">
-            <nav>
-                <ul class="nav nav-pills pull-right">
-                    {{#if newUser}}
-                    <li role="presentation">
-                        <a href="/">Dashboard</a>
-                    </li>
-                      {{!-- <li role="presentation">
-                        <a href="/register">Register</a>
-                    </li> --}}
-                    <li role="presentation">
-                        <a href="/poll">Online Poll</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="/logout">Logout</a>
-                    </li>
-                    {{else}}
-                     <li role="presentation">
-                        <a href="/login">Login</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="/logout">Logout</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="/register">Register</a>
-                    </li>
-                    
-                    {{/if}}
-                </ul>
-            </nav>
-            <h3 class="text-muted">Login App</h3>
-        </div>
+ 
+<div class="container">
+    <div class="header"> 
+         {{#if user}}
+  <a href="/" class="btn btn-info btn lg active" role="button" aria-pressed="true">Dashboard</a> 
+  <a href="/poll" class="btn btn-info btn lg active" role="button" aria-pressed="true">Online Poll</a> 
+  <a href="/logout" class="btn btn-info btn lg active" role="button" aria-pressed="true">Logout</a> 
+  <a href="/register" class="btn btn-info btn lg active" role="button" aria-pressed="true">Register</a> 
+{{else}}
+  <a href="/login" class="btn btn-info btn lg active" role="button" aria-pressed="true">Login</a> 
+  <a href="/poll" class="btn btn-info btn lg active" role="button" aria-pressed="true">Online Poll</a> 
+  <a href="/register" class="btn btn-info btn lg active" role="button" aria-pressed="true">Register</a> 
+                </div>
+       </div>             
+                <button type="button" class="btn btn-primary">Login App</button>
+        
 
         <div class="row">
             <div class="col-lg-12">
@@ -68,8 +51,10 @@
             <p>&copy; 2018 LoginApp, Inc.</p>
         </footer>
 
-    </div>
+  
     <!-- /container -->
 </body>
-
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" </script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" </script>
 </html>

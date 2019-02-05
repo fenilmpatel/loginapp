@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,45 +12,43 @@
     <title>Login App</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
+    
 </head>
 
 <body>
+    
     <div class="container">
         <div class="header clearfix">
-            <nav>
-                <ul class="nav nav-pills pull-right">
+           
                     {{#if user}}
-                    <li role="presentation">
-                        <a href="/">Dashboard</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="/poll">Online Poll</a>
-                    </li>
-                    <li role="presentation">
+                       <button type="button" class="btn btn-outline-info btn-lg">
+                        <a href="/login">Login</a></button>
+
+                    <button type="button" class="btn btn-outline-info btn-lg">
+                        <a href="/register">Register</a>
+                   </button>
+                    <button type="button" class="btn btn-outline-info btn-lg">
+                        <a href="/poll">Online-Poll</a>
+                   </button>
+                    <button type="button" class="btn btn-outline-info btn-lg">
                         <a href="/logout">Logout</a>
-                    <li role="presentation">
-                        <a href="/login">Login</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="/register">Register</a>
-                    </li>
-                    </li>
+                   </button>
+
+                    
                     {{else}}
+                 <button type="button" class="btn btn-outline-info btn-lg">
+                     <a href="/login">Login</a></button>
 
-
-                    <li role="presentation">
-                        <a href="/login">Login</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="/poll">Online Poll</a>
-                    </li>
-                    <li role="presentation">
+                    <button type="button" class="btn btn-outline-info btn-lg">
                         <a href="/register">Register</a>
-                    </li>
-                    </li>
+                   </button>
+
+                    <button type="button" class="btn btn-outline-info btn-lg">
+                        <a href="/poll">Online-Poll</a>
+                   </button>
+                    
                     {{/if}}
-                </ul>
-            </nav>
+            
             <h3 class="text-muted">Login App</h3>
         </div>
 
@@ -72,5 +71,7 @@
     </div>
     <!-- /container -->
 </body>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" ></script>
 </html>
