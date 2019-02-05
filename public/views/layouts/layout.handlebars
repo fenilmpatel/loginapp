@@ -9,6 +9,10 @@
     <meta name="description" content="">
     <meta name="author" content="arijit">
     <title>Login App</title>
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
 </head>
@@ -18,35 +22,30 @@
         <div class="header clearfix">
             <nav>
                 <ul class="nav nav-pills pull-right">
-                    {{#if user}}
+                    {{#if newUser}}
                     <li role="presentation">
                         <a href="/">Dashboard</a>
                     </li>
+                      {{!-- <li role="presentation">
+                        <a href="/register">Register</a>
+                    </li> --}}
                     <li role="presentation">
                         <a href="/poll">Online Poll</a>
                     </li>
                     <li role="presentation">
                         <a href="/logout">Logout</a>
-                    <li role="presentation">
-                        <a href="/login">Login</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="/register">Register</a>
-                    </li>
                     </li>
                     {{else}}
-
-
-                    <li role="presentation">
+                     <li role="presentation">
                         <a href="/login">Login</a>
                     </li>
                     <li role="presentation">
-                        <a href="/poll">Online Poll</a>
+                        <a href="/logout">Logout</a>
                     </li>
                     <li role="presentation">
                         <a href="/register">Register</a>
                     </li>
-                    </li>
+                    
                     {{/if}}
                 </ul>
             </nav>

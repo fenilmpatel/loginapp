@@ -1,0 +1,48 @@
+<h2 class="page-header">Account Login</h2>
+<form method="POST" action="/login">
+    <div class="form-group">
+        <label>User Name</label>
+        <input type="text" class="form-control" placeholder="Enter Username" name="username"/>
+    </div>
+    <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control" placeholder="Enter Password" name="password"/>
+    </div>
+    <script>
+    $('select.dropdown')
+        .dropdown()
+    ;
+    $('.ui.form')
+      .form({
+        fields: {
+        
+     
+          username: {
+            identifier: 'username',
+            rules: [
+              {
+                type   : 'empty',
+                prompt : 'Please enter a username'
+              }
+            ]
+          },
+          password: {
+            identifier: 'password',
+            rules: [
+              {
+                type   : 'empty',
+                prompt : 'Please enter a password'
+              },
+              {
+                type   : 'minLength[6]',
+                prompt : 'Your password must be at least {ruleValue} characters'
+              }
+            ]
+          },
+          
+        }
+      })
+    ;
+</script>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
